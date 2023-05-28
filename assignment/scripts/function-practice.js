@@ -63,11 +63,18 @@ console.log('The last item of getLast is:', getLast(['Dana Scully', 'Fox Mulder'
 console.log('The last item of getLast is:', getLast([]));
 
 // 7. Function to find a value in an array. Return true if the 
-//    vale is found and false otherwise. Use a loop;
+//    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
-}
+  for (let i=0; i<=array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
+  }
+    return false;
+  }
+console.log(find(5, [1, 2, 3, 4, 5]));
+console.log(find(6, [1, 2, 3, 4, 5]));
 
 // ----------------------
 // Stretch Goals
